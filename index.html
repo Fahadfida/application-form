@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Job Application (Web)</h1>
+        <form action="/" method="get">
+          <div class="inputs">
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="Enter your first name"
+              required
+            />
+            <label for="last-name">Last Name:</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="jobs">Jobs:</label>
+            <select id="jobs" name="jobs">
+              <option value="#">Please Select a Job</option>
+              <option value="g-designer">Graphics Design</option>
+              <option value="game-dev">Game Developer</option>
+              <option value="app-dev">App Developer</option>
+              <option value="fstack-dev">Full Stack Developer</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="address">Enter your address:</label>
+            <textarea
+              name="address"
+              id="address"
+              cols="30"
+              rows="5"
+              placeholder="Please Enter your current Address"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" name="profile-pic" id="profile-pic" />
+
+            <label for="gender">Gender</label>
+            <input type="radio" checked name="gender" id="gender" /> Male
+            <input type="radio" name="gender" id="gender" /> Female
+          </div>
+          <button value="submit" name="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <h4 class="ref">Portfolio project Fahad</h4>
+  </body>
+</html>
